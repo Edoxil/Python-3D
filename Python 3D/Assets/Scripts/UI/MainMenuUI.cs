@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class UI : MonoBehaviour
+
+public class MainMenuUI : MonoBehaviour
 {
     public Texture2D cursor;
 
