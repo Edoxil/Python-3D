@@ -30,6 +30,6 @@ public class FoodSpawner : MonoBehaviour
     }
     Vector3 RandomPosition()
     {
-        return currentPosition = new Vector3(Random.Range(-planeX, planeX), 1f, Random.Range(-planeZ, planeZ));
+        return currentPosition = new Vector3(Random.Range(-planeX, planeX), 1.25f, Random.Range(-planeZ, planeZ));
     }
 }
