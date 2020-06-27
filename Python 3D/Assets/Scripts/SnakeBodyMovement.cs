@@ -16,6 +16,7 @@ public class SnakeBodyMovement : MonoBehaviour
         mainSnake = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<SnakeMovement>();
         tailTargetObject = mainSnake.snakeBody[mainSnake.snakeBody.Count - 2];
         indx = mainSnake.snakeBody.IndexOf(tailTargetObject);
+        
     }
 
     void Update()
@@ -23,7 +24,7 @@ public class SnakeBodyMovement : MonoBehaviour
 
         tailTarget = tailTargetObject.transform.position;
 
-
+        speed = mainSnake.speed;
 
 
         transform.LookAt(tailTarget);
