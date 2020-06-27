@@ -18,13 +18,13 @@ public class SnakeBodyMovement : MonoBehaviour
         indx = mainSnake.snakeBody.IndexOf(tailTargetObject);
         
     }
-
+  
     void Update()
     {
-
+        speed = mainSnake.speed;
         tailTarget = tailTargetObject.transform.position;
 
-        speed = mainSnake.speed;
+        
 
 
         transform.LookAt(tailTarget);
@@ -35,7 +35,7 @@ public class SnakeBodyMovement : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if (indx > 2)
+            if (indx > 5)
             {
                 UnityEngine.SceneManagement.SceneManager.LoadScene(0);
             }

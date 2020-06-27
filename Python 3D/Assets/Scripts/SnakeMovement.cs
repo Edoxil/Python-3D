@@ -35,10 +35,10 @@ public class SnakeMovement : MonoBehaviour
         Vector3 newTailPos = snakeBody[snakeBody.Count - 1].transform.position;
         snakeBody.Add(GameObject.Instantiate(bodyPrefab, newTailPos, Quaternion.identity));
 
-        if (speed < 8)
+        if (speed < 9)
         {
-            speed += 0.2f;
-
+            speed += 0.3f;
+           
         }
     }
 }
